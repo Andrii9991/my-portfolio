@@ -1,11 +1,11 @@
 <template>
-  <div class="flex flex-col min-h-screen mx-auto">
-    <THeader />
+  <div class="flex flex-col mx-auto">
+    <PHeader />
 
     <main>
       <slot />
     </main>
 
-    <TFooter />
+    <PFooter />
   </div>
 </template>
