@@ -9,6 +9,9 @@ export default {
         lightGrey: "#F1F1F3",
         title: "linear-gradient(37.87deg, #1D2F6F -11.03%, #8390FA 98.56%)",
       },
+      boxShadow: {
+        custom: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)",
+      },
       fontFamily: {
         nunito: ["Nunito", "sans-serif"],
         russoOne: ['"Russo One"', "serif"],
