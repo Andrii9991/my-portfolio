@@ -1,11 +1,11 @@
 <template>
-  <div>
-    <THeader />
+  <div class="">
+    <PHeader />
 
     <main>
       <slot />
     </main>
 
-    <TFooter />
+    <PFooter />
   </div>
 </template>
