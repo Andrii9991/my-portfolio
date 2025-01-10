@@ -2,7 +2,7 @@
   <section class="w-[100%] flex flex-col items-center bg-lightGrey">
     <div class="flex flex-col items-center w-[650px]">
       <h1
-        class="bg-custom-gradient mt-20 mb-[50px] gradient-text text-center font-russoOne text-8xl leading-[96px]"
+        class="bg-custom-gradient animate-bounce mt-20 mb-[50px] gradient-text text-center font-russoOne text-8xl leading-[96px]"
       >
         Front-End Developer
       </h1>
