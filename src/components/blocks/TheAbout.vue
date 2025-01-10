@@ -1,27 +1,20 @@
 <template>
   <section
     id="about"
-    class="w-[100%] h-[100%] rounded-[160px] bg-white flex justify-center"
+    class="w-[100%] h-[100%] xl:rounded-[160px] sm:rounded-[90px] bg-white flex justify-center"
   >
     <div class="w-fit-content my-[105px] max-w-[1280px] flex justify-around">
-      <!-- Flip Box Container -->
       <div class="flip-box w-[468px] h-[588px]">
         <div class="flip-box-inner">
-          <!-- Front Side -->
-          <div class="flip-box-front">
+          <div
+            v-for="item in avatarImages"
+            :key="item.title"
+            :class="item.style"
+          >
             <img
-              class="object-cover"
-              src="../../public/img/basic-images/avatar.svg"
-              alt="Image 1"
-            />
-          </div>
-
-          <!-- Back Side -->
-          <div class="flip-box-back">
-            <img
-              class="object-cover"
-              src="../../public/img/basic-images/back-avatar.svg"
-              alt="Image 2"
+              class="object-cover shadow-lg rounded-3xl"
+              :src="item.photo"
+              :alt="item.title"
             />
           </div>
         </div>
@@ -50,16 +43,19 @@
         </p>
 
         <div class="flex w-[100%] mt-20 gap-3">
-          <img
-            class="w-[55px] h-[55px]"
-            src="../../public/img/social-images/github.svg"
-            alt="Github"
-          />
-          <img
-            class="w-[55px] h-[55px]"
-            src="../../public/img/social-images/linkedin.svg"
-            alt="Github"
-          />
+          <a href="https://github.com/Andrii9991">
+            <img
+              class="w-[55px] h-[55px]"
+              src="../../public/img/social-images/github.svg"
+              alt="Github"
+            />
+          </a>
+          <a href="http://www.linkedin.com/in/andrii-myshchyshyn-36a64b228">
+            <img
+              class="w-[55px] h-[55px]"
+              src="../../public/img/social-images/linkedin.svg"
+              alt="Github"
+          /></a>
 
           <PButton class="ml-5" text="PORTFOLIO" />
         </div>
@@ -71,13 +67,18 @@
 <script setup lang="ts">
 import PButton from "../general-Ui/PButton.vue";
 
-const isFlipping = ref(false);
-
-onMounted(() => {
-  setInterval(() => {
-    isFlipping.value = !isFlipping.value;
-  }, 5000);
-});
+const avatarImages = ref([
+  {
+    photo: "/img/basic-images/avatar.svg",
+    title: "front-avatar",
+    style: "flip-box-front",
+  },
+  {
+    photo: "/img/basic-images/back-avatar.svg",
+    title: "back-avatar",
+    style: "flip-box-back",
+  },
+]);
 </script>
 
 <style>
