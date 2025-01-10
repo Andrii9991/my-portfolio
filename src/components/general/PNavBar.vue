@@ -2,7 +2,7 @@
   <nav>
     <ul class="font-inter flex items-center gap-x-8">
       <li
-        v-for="item in navItems"
+        v-for="item in store.navItems"
         :key="item.id"
         class="leading-[24px] hover:underline cursor-pointer font-medium"
       >
@@ -13,30 +13,7 @@
 </template>
 
 <script setup lang="ts">
-const navItems = ref([
-  {
-    active: false,
-    id: "1",
-    title: "Home",
-    href: "#home",
-  },
-  {
-    active: false,
-    id: "2",
-    title: "About",
-    href: "#about",
-  },
-  {
-    active: false,
-    id: "3",
-    title: "Projects",
-    href: "#projects",
-  },
-  {
-    active: false,
-    id: "4",
-    title: "Contacts",
-    href: "#contacts",
-  },
-]);
+import { navBarDefineStore } from "~/stores/navbar";
+
+const store = navBarDefineStore();
 </script>
