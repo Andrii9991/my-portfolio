@@ -1,8 +1,8 @@
 <template>
-  <header class="w-[100%] h-[100px] shadow-custom flex justify-center">
-    <div class="w-[100%] flex justify-around items-center">
+  <header class="flex h-[100px] max-w-[100%] justify-center shadow-custom">
+    <div class="flex w-[100%] items-center justify-around px-5">
       <nuxt-link to="/">
-        <img class="w-[162px] h-[55px]" src="/img/logo.svg" alt="logo" />
+        <img class="h-[55px] w-[162px]" src="/img/logo.svg" alt="logo" />
       </nuxt-link>
 
       <PNavBar />

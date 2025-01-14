@@ -1,3 +1,3 @@
 <template>
-  <footer id="contacts">Footer</footer>
+  <footer class="mt-[120px] rounded-t-lg" id="contacts">Footer</footer>
 </template>
