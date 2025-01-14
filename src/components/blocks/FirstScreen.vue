@@ -1,6 +1,6 @@
 <template>
   <section class="flex w-[100%] flex-col items-center bg-lightGrey">
-    <div class="flex flex-col items-center md:w-[650px]">
+    <div class="flex flex-col items-center px-5 md:w-[650px]">
       <h1
         class="gradient-text my-3 animate-bounce bg-custom-gradient text-center font-russoOne text-xl sm:mb-4 sm:mt-10 sm:px-2 sm:text-5xl md:mb-[50px] md:mt-20 md:text-8xl md:leading-[96px] lg:mb-5 lg:text-[80px]"
       >
