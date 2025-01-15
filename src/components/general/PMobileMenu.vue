@@ -1,6 +1,6 @@
 <template>
   <div
-    class="fixed inset-0 z-40 flex flex-col items-center bg-black bg-opacity-90 text-white transition-transform duration-500"
+    class="fixed inset-0 z-40 flex flex-col items-center bg-black bg-opacity-90 text-white transition-transform duration-500 md:hidden"
     :class="{
       'translate-x-[-100%]': !modelValue,
       'translate-x-0': modelValue,
