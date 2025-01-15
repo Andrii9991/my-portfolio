@@ -1,6 +1,7 @@
 <template>
   <header
     class="flex max-w-[100%] justify-center py-4 shadow-custom sm:h-[100px]"
+    :class="{ isMenuOpen: 'overflow-hidden' }"
   >
     <div class="flex w-[100%] items-center justify-between px-5">
       <nuxt-link to="/">
@@ -35,9 +36,7 @@
       </div>
     </div>
 
-    <div v-if="isMenuOpen" class="bg-gray-800 p-4 md:hidden">
-      <PNavBar />
-    </div>
+    <PMobileMenu v-model="isMenuOpen" />
   </header>
 </template>
 
