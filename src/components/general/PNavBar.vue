@@ -1,10 +1,10 @@
 <template>
   <nav>
-    <ul class="font-inter flex items-center gap-x-8">
+    <ul class="flex items-center font-inter sm:gap-x-8">
       <li
         v-for="item in store.navItems"
         :key="item.id"
-        class="leading-[24px] hover:underline cursor-pointer font-medium"
+        class="cursor-pointer font-medium leading-[24px] hover:underline"
       >
         <nuxt-link :to="item.href">{{ item.title }}</nuxt-link>
       </li>
@@ -13,7 +13,7 @@
 </template>
 
 <script setup lang="ts">
-import { navBarDefineStore } from "~/stores/navbar";
+import { navBarDefineStore } from '~/stores/navbar'
 
-const store = navBarDefineStore();
+const store = navBarDefineStore()
 </script>
