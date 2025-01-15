@@ -5,13 +5,13 @@
   >
     <!-- Wrapper -->
     <div
-      class="flex w-fit-content max-w-[1080px] flex-col md:my-8 md:flex-row lg:my-[105px] lg:justify-around"
+      class="flex w-fit-content max-w-[1080px] flex-col xs:flex-row md:my-8 md:flex-row lg:my-[100px] lg:justify-around"
     >
       <!-- Image Block -->
       <div
-        class="flip-box flex h-auto w-full justify-center md:max-h-[500px] md:max-w-[398px] lg:max-h-[588px] lg:max-w-[468px]"
+        class="flip-box flex h-auto w-full min-w-[40%] justify-center md:max-h-[500px] md:max-w-[398px] lg:max-h-[588px] lg:max-w-[468px]"
       >
-        <div class="flip-box-inner max-w-[300px]">
+        <div class="flip-box-inner max-w-[100%]">
           <div
             v-for="item in avatarImages"
             :key="item.title"
@@ -28,7 +28,7 @@
 
       <!-- Content Block -->
       <div
-        class="mt-4 flex flex-col items-center text-center md:ml-2 md:p-4 lg:ml-20"
+        class="mt-4 flex flex-col items-center text-center xs:ml-4 md:ml-2 md:p-4 lg:ml-20"
       >
         <h1
           class="gradient-text text-center font-russoOne text-[20px] md:mb-2 md:text-3xl lg:mb-5 lg:text-5xl"
@@ -43,7 +43,7 @@
         </h3>
 
         <p
-          class="text-inter mb-5 text-[12px] font-light leading-5 md:leading-6 lg:leading-10"
+          class="text-inter mb-5 text-[12px] font-light leading-5 md:leading-6 lg:text-[12px] lg:leading-10"
         >
           Skilled Front-End Developer from Ternopil, Ukraine, with a focus on
           JavaScript and TypeScript. Specializing in Vue2/Vue3 frameworks,
@@ -69,7 +69,7 @@
               alt="Github"
           /></a>
 
-          <PButton class="ml-[150px]" text="PORTFOLIO" />
+          <PButton class="ml-[150px] xs:ml-2" text="PORTFOLIO" />
         </div>
       </div>
     </div>
@@ -85,44 +85,50 @@ const avatarImages = ref([
     title: 'front-avatar',
     style: 'flip-box-front',
   },
-  // {
-  //   photo: '/img/basic-images/back-avatar.svg',
-  //   title: 'back-avatar',
-  //   style: 'flip-box-back',
-  // },
+  {
+    photo: '/img/basic-images/back-avatar.svg',
+    title: 'back-avatar',
+    style: 'flip-box-back',
+  },
 ])
 </script>
 
-<!-- <style>
+<style>
 .flip-box {
   background-color: transparent;
   perspective: 1000px;
   cursor: pointer;
 }
-
-.flip-box-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.5s;
-  transform-style: preserve-3d;
-}
-
-.flip-box:hover .flip-box-inner {
-  transform: rotateY(180deg);
-}
-
-.flip-box-front,
 .flip-box-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
+  display: none;
 }
 
-.flip-box-back {
-  transform: rotateY(180deg);
+@media (min-width: 767px) {
+  .flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+  }
+
+  .flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+  }
+
+  .flip-box-front,
+  .flip-box-back {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+
+  .flip-box-back {
+    transform: rotateY(180deg);
+  }
 }
-</style> -->
+</style>
