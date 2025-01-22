@@ -1,7 +1,7 @@
 <template>
   <div class="flex max-w-[100%] flex-col items-center bg-lightGrey">
     <FirstScreen />
-    <!-- <TheAbout /> -->
+    <TheAbout />
     <TheProjects class="mt-[1000px]" />
   </div>
 </template>

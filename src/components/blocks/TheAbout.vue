@@ -1,44 +1,50 @@
 <template>
   <section
     id="about"
-    class="flex h-[100%] w-[100%] justify-center bg-white sm:rounded-[70px] xl:rounded-[160px]"
+    class="flex h-[100%] w-[100%] justify-center bg-white p-5 sm:rounded-[70px] xl:rounded-[160px]"
   >
+    <!-- Wrapper -->
     <div
-      class="flex w-fit-content max-w-[1080px] sm:flex-col md:my-8 md:flex-row lg:my-[105px] lg:justify-around"
+      class="flex w-fit-content max-w-[1080px] flex-col xs:flex-row md:my-8 md:flex-row lg:my-[100px] lg:justify-around"
     >
+      <!-- Image Block -->
       <div
-        class="flip-box h-auto w-full p-4 md:max-h-[500px] md:max-w-[398px] lg:max-h-[588px] lg:max-w-[468px]"
+        class="flip-box flex h-auto w-full min-w-[40%] justify-center md:max-h-[500px] md:max-w-[398px] lg:max-h-[588px] lg:max-w-[468px]"
       >
-        <div class="flip-box-inner">
+        <div class="flip-box-inner max-w-[100%]">
           <div
             v-for="item in avatarImages"
             :key="item.title"
             :class="item.style"
           >
             <img
-              class="rounded-3xl object-cover shadow-lg"
+              class="m-auto rounded-3xl object-cover shadow-lg sm:max-h-[350px]"
               :src="item.photo"
               :alt="item.title"
             />
           </div>
         </div>
       </div>
+
+      <!-- Content Block -->
       <div
-        class="ml-20 flex w-[50%] flex-col items-center md:ml-2 md:p-4 lg:ml-6"
+        class="mt-4 flex flex-col items-center text-center xs:ml-4 md:ml-2 md:p-4 lg:ml-20"
       >
         <h1
-          class="gradient-text text-center font-russoOne md:mb-2 md:text-3xl lg:mb-5 lg:text-5xl"
+          class="gradient-text text-center font-russoOne text-[20px] md:mb-2 md:text-3xl lg:mb-5 lg:text-5xl"
         >
           About me
         </h1>
 
         <h3
-          class="text-inter justify-center text-center font-semibold leading-10 md:mb-[28px] md:w-[100%] md:text-[30px] lg:mb-[46px] lg:w-[80%] lg:text-[40px]"
+          class="text-inter justify-center text-center text-base font-semibold leading-10 md:mb-[28px] md:w-[100%] md:text-[30px] lg:mb-[46px] lg:w-[80%] lg:text-[40px]"
         >
           Front-End Developer Vue.js Specialist
         </h3>
 
-        <p class="text-inter text-sm font-light md:leading-6 lg:leading-10">
+        <p
+          class="text-inter mb-5 text-[12px] font-light leading-5 md:leading-6 lg:text-[12px] lg:leading-10"
+        >
           Skilled Front-End Developer from Ternopil, Ukraine, with a focus on
           JavaScript and TypeScript. Specializing in Vue2/Vue3 frameworks,
           leveraging Pinia and VueX for seamless state management. Adept at
@@ -51,19 +57,19 @@
         <div class="flex w-[100%] gap-3 md:mt-16 lg:mt-[90px]">
           <a href="https://github.com/Andrii9991">
             <img
-              class="h-[55px] w-[55px]"
+              class="max-h-[40px] max-w-[40px] md:h-[55px] md:w-[55px]"
               src="../../public/img/social-images/github.svg"
               alt="Github"
             />
           </a>
           <a href="http://www.linkedin.com/in/andrii-myshchyshyn-36a64b228">
             <img
-              class="h-[55px] w-[55px]"
+              class="max-h-[40px] max-w-[40px] md:h-[55px] md:w-[55px]"
               src="../../public/img/social-images/linkedin.svg"
               alt="Github"
           /></a>
 
-          <PButton class="ml-5" text="PORTFOLIO" />
+          <PButton class="ml-[150px] xs:ml-2" text="PORTFOLIO" />
         </div>
       </div>
     </div>
@@ -93,30 +99,36 @@ const avatarImages = ref([
   perspective: 1000px;
   cursor: pointer;
 }
-
-.flip-box-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.5s;
-  transform-style: preserve-3d;
-}
-
-.flip-box:hover .flip-box-inner {
-  transform: rotateY(180deg);
-}
-
-.flip-box-front,
 .flip-box-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
+  display: none;
 }
 
-.flip-box-back {
-  transform: rotateY(180deg);
+@media (min-width: 767px) {
+  .flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+  }
+
+  .flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+  }
+
+  .flip-box-front,
+  .flip-box-back {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+
+  .flip-box-back {
+    transform: rotateY(180deg);
+  }
 }
 </style>
