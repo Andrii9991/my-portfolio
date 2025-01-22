@@ -1,8 +1,10 @@
 <template>
-  <div class="flex max-w-[100%] flex-col items-center bg-lightGrey">
+  <div
+    class="flex max-w-[100%] flex-col items-center bg-white px-[3rem] md:bg-lightGrey md:px-0"
+  >
     <FirstScreen />
     <TheAbout />
-    <TheProjects class="mt-[1000px]" />
+    <TheProjects />
   </div>
 </template>
 
