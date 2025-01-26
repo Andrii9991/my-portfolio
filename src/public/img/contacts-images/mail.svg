@@ -1,0 +1,27 @@
+<svg width="64" height="63" viewBox="0 0 64 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_dd_105_1184)">
+<rect x="12" y="2.01904" width="39.7106" height="38.8473" rx="19.4236" fill="white"/>
+<path d="M32.0001 26.3525C34.3933 26.3525 36.3334 24.4124 36.3334 22.0191C36.3334 19.6259 34.3933 17.6858 32.0001 17.6858C29.6068 17.6858 27.6667 19.6259 27.6667 22.0191C27.6667 24.4124 29.6068 26.3525 32.0001 26.3525Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M36.3334 17.6856V23.1023C36.3334 23.9642 36.6758 24.7909 37.2853 25.4004C37.8948 26.0099 38.7215 26.3523 39.5834 26.3523C40.4454 26.3523 41.272 26.0099 41.8815 25.4004C42.491 24.7909 42.8334 23.9642 42.8334 23.1023V22.0189C42.8333 19.5739 42.006 17.2008 40.4861 15.2855C38.9663 13.3702 36.8432 12.0254 34.4621 11.4698C32.081 10.9141 29.582 11.1802 27.3714 12.2249C25.1608 13.2696 23.3685 15.0314 22.2861 17.2238C21.2037 19.4162 20.8948 21.9103 21.4096 24.3006C21.9244 26.6908 23.2326 28.8366 25.1216 30.3891C27.0106 31.9415 29.3691 32.8093 31.8138 32.8514C34.2585 32.8934 36.6455 32.1072 38.5868 30.6206" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<filter id="filter0_dd_105_1184" x="0" y="0.019043" width="63.7104" height="62.8472" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feMorphology radius="4" operator="erode" in="SourceAlpha" result="effect1_dropShadow_105_1184"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="3"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_105_1184"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feMorphology radius="3" operator="erode" in="SourceAlpha" result="effect2_dropShadow_105_1184"/>
+<feOffset dy="10"/>
+<feGaussianBlur stdDeviation="7.5"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+<feBlend mode="normal" in2="effect1_dropShadow_105_1184" result="effect2_dropShadow_105_1184"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_105_1184" result="shape"/>
+</filter>
+</defs>
+</svg>
