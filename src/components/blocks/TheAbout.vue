@@ -1,7 +1,7 @@
 <template>
   <section
     id="about"
-    class="flex h-[100%] w-[100%] justify-center bg-white p-5 sm:rounded-[70px] xl:rounded-[160px]"
+    class="flex h-[100%] w-[100%] justify-center bg-white p-5 sm:rounded-t-[70px] xl:rounded-t-[160px]"
   >
     <!-- Wrapper -->
     <div
