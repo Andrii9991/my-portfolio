@@ -1,7 +1,7 @@
 <template>
   <section
     id="about"
-    class="flex h-[100%] w-[100%] justify-center bg-white p-5 sm:rounded-[70px] xl:rounded-[160px]"
+    class="flex h-[100%] w-[100%] justify-center bg-white p-5 sm:rounded-t-[70px] xl:rounded-t-[160px]"
   >
     <!-- Wrapper -->
     <div
@@ -32,6 +32,7 @@
       >
         <h1
           class="gradient-text text-center font-russoOne text-[20px] md:mb-2 md:text-3xl lg:mb-5 lg:text-5xl"
+          data-aos="fade-up"
         >
           About me
         </h1>
@@ -43,6 +44,9 @@
         </h3>
 
         <p
+          data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="1000"
           class="text-inter mb-5 text-[12px] font-light leading-5 md:leading-6 lg:text-[12px] lg:leading-10"
         >
           Skilled Front-End Developer from Ternopil, Ukraine, with a focus on
@@ -54,7 +58,10 @@
           aiming to build innovative web solutions.
         </p>
 
-        <div class="flex w-[100%] gap-3 md:mt-16 lg:mt-[90px]">
+        <div
+          data-aos="fade-right"
+          class="flex w-[100%] gap-3 md:mt-16 lg:mt-[90px]"
+        >
           <a href="https://github.com/Andrii9991">
             <img
               class="max-h-[40px] max-w-[40px] md:h-[55px] md:w-[55px]"
