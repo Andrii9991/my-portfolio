@@ -1,7 +1,5 @@
 <template>
-  <div
-    class="flex max-w-[100%] flex-col items-center bg-white px-[3rem] md:bg-lightGrey md:px-0"
-  >
+  <div class="flex max-w-[100%] flex-col items-center bg-white md:px-0">
     <FirstScreen />
     <TheAbout />
     <TheProjects />
