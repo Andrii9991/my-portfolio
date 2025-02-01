@@ -1,7 +1,7 @@
 <template>
   <footer
     data-aos="fade-up"
-    class="flex h-[300px] flex-col items-center rounded-t-[30px] bg-lightGrey px-8 py-3 xs:px-10 xs:py-4 md:rounded-t-[50px] md:px-16"
+    class="flex h-[300px] flex-col items-center rounded-t-[30px] bg-lightGrey px-8 py-3 xs:px-10 xs:py-4 md:rounded-t-[50px] md:px-16 lg:mt-[-145px] xl:rounded-t-[160px]"
     id="contacts"
   >
     <h1
