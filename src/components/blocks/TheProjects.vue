@@ -1,6 +1,6 @@
 <template>
   <section
-    class="mb-12 flex w-full justify-center from-[#8F98A4] to-[#DBEBFF] md:bg-gradient-to-tr md:pb-[200px] lg:mt-[-120px] xl:rounded-t-[160px]"
+    class="mb-12 flex w-full justify-center from-[#8F98A4] to-[#DBEBFF] md:bg-gradient-to-tr md:pb-[210px] lg:mt-[-120px] xl:rounded-t-[160px]"
     id="projects"
   >
     <!-- Wrapper -->

@@ -1,26 +1,20 @@
 <template>
   <section
     id="about"
-    class="flex h-[100%] w-[100%] justify-center bg-white p-5 sm:rounded-t-[70px] lg:mt-[-150px] xl:rounded-t-[160px]"
+    class="flex h-[100%] w-[100%] justify-center bg-white p-5 sm:rounded-t-[70px] lg:mt-[-150px] xl:rounded-t-[160px] xl:pb-[100px]"
   >
     <!-- Wrapper -->
     <div
-      class="flex w-fit-content max-w-[1080px] flex-col xs:flex-row md:my-8 md:flex-row lg:my-[100px] lg:justify-around"
+      class="w-full-content flex max-w-7xl flex-col md:my-8 md:flex-row lg:my-[100px] lg:justify-around"
     >
       <!-- Image Block -->
-      <div
-        class="flip-box flex h-auto w-full min-w-[40%] justify-center md:max-h-[500px] md:max-w-[398px] lg:max-h-[588px] lg:max-w-[468px]"
-      >
-        <div class="flip-box-inner max-w-[100%]">
-          <div
-            v-for="item in avatarImages"
-            :key="item.title"
-            :class="item.style"
-          >
+      <div class="flex w-full justify-center">
+        <div class="">
+          <div>
             <img
-              class="m-auto rounded-3xl object-cover shadow-lg sm:max-h-[350px]"
-              :src="item.photo"
-              :alt="item.title"
+              class="w-full max-w-[300px] md:max-h-[573px] md:max-w-full"
+              src="../../public/img/basic-images/avatar.svg"
+              alt="avatar image"
             />
           </div>
         </div>
@@ -28,7 +22,7 @@
 
       <!-- Content Block -->
       <div
-        class="mt-4 flex flex-col items-center text-center xs:ml-4 md:ml-2 md:p-4 lg:ml-20"
+        class="m-4 flex w-full flex-col items-center text-center xs:ml-4 md:ml-2 md:max-w-[50%] md:p-4 lg:ml-20"
       >
         <h1
           class="gradient-text text-center font-russoOne text-[20px] md:mb-2 md:text-3xl lg:mb-5 lg:text-5xl"
@@ -47,7 +41,7 @@
           data-aos="flip-left"
           data-aos-easing="ease-out-cubic"
           data-aos-duration="1000"
-          class="text-inter mb-5 text-[12px] font-light leading-5 md:leading-6 lg:text-[12px] lg:leading-10"
+          class="text-inter mb-5 max-w-[80%] text-left text-[12px] font-light leading-5 md:leading-6 lg:text-[14px] lg:leading-10"
         >
           Skilled Front-End Developer from Ternopil, Ukraine, with a focus on
           JavaScript and TypeScript. Specializing in Vue2/Vue3 frameworks,
@@ -60,7 +54,7 @@
 
         <div
           data-aos="fade-right"
-          class="flex w-[100%] gap-3 md:mt-16 lg:mt-[90px]"
+          class="flex w-[100%] justify-center gap-3 md:mt-16 lg:mt-1"
         >
           <a href="https://github.com/Andrii9991">
             <img
@@ -85,57 +79,4 @@
 
 <script setup lang="ts">
 import PButton from '../general-Ui/PButton.vue'
-
-const avatarImages = ref([
-  {
-    photo: '/img/basic-images/avatar.svg',
-    title: 'front-avatar',
-    style: 'flip-box-front',
-  },
-  {
-    photo: '/img/basic-images/back-avatar.svg',
-    title: 'back-avatar',
-    style: 'flip-box-back',
-  },
-])
 </script>
-
-<style>
-.flip-box {
-  background-color: transparent;
-  perspective: 1000px;
-  cursor: pointer;
-}
-.flip-box-back {
-  display: none;
-}
-
-@media (min-width: 767px) {
-  .flip-box-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.5s;
-    transform-style: preserve-3d;
-  }
-
-  .flip-box:hover .flip-box-inner {
-    transform: rotateY(180deg);
-  }
-
-  .flip-box-front,
-  .flip-box-back {
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-  }
-
-  .flip-box-back {
-    transform: rotateY(180deg);
-  }
-}
-</style>
