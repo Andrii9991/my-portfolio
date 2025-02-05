@@ -1,6 +1,6 @@
 <template>
   <header
-    class="flex max-w-[100%] justify-center py-4 shadow-custom sm:h-[100px]"
+    class="sticky top-0 z-20 flex max-w-[100%] justify-center bg-white py-4 shadow-custom sm:h-[100px]"
     :class="{ isMenuOpen: 'overflow-hidden' }"
   >
     <div class="flex w-[100%] items-center justify-between px-5">

@@ -1,5 +1,6 @@
 <template>
   <section
+    id="home"
     class="flex w-[100%] flex-col items-center bg-lightGrey from-[#8F98A4] to-[#DBEBFF] lg:bg-gradient-to-tr lg:pb-[150px]"
   >
     <!-- Wrapper block -->
@@ -19,22 +20,26 @@
         </h2>
 
         <h4
-          class="text-custom mt-3 max-w-[632px] px-2 text-center text-xs leading-5 xs:max-w-[80%] sm:mt-4 md:mt-6 md:text-[16px] lg:mb-14 lg:w-auto lg:text-base lg:leading-6"
+          class="text-custom mt-3 max-w-[632px] px-2 text-center text-xs leading-5 xs:max-w-[80%] sm:mt-4 md:mt-6 md:text-[16px] lg:mb-14 lg:w-full lg:max-w-[610px] lg:text-base lg:leading-6"
         >
           Diligent Frontend Developer with expertise in JavaScript and
-          TypeScript, specializing in Vue2/Vue3 and employing Pinia/VueX for
-          efficient state management.
+          TypeScript, specializing <br class="hidden xl:block" />
+          in Vue2/Vue3 and employing Pinia/VueX for efficient state management.
         </h4>
         <div
           class="my-4 flex flex-wrap justify-center gap-1 px-3 xs:max-w-[80%] xs:gap-x-2 xs:px-3 sm:my-5 sm:gap-4 sm:px-5 md:mb-[64px] md:mt-[77px] md:max-w-[740px] md:gap-x-8 lg:mt-0"
         >
-          <img
-            class="h-[35px] w-[35px] xs:h-[40px] xs:w-[40px] md:h-[60px] md:w-[60px]"
-            v-for="item in skilItems"
+          <a
+            :href="item.link"
+            v-for="item in skilsStore.skilItems"
             :key="item.id"
-            :src="item.image"
-            :alt="item.title"
-          />
+          >
+            <img
+              class="h-[35px] w-[35px] xs:h-[40px] xs:w-[40px] md:h-[60px] md:w-[60px]"
+              :src="item.image"
+              :alt="item.title"
+            />
+          </a>
         </div>
       </div>
 
@@ -51,77 +56,7 @@
 </template>
 
 <script setup lang="ts">
-const skilItems = ref<{ id: number; image: string; title: string }[]>([
-  {
-    id: 1,
-    image: '/img/skils-images/1.svg',
-    title: 'css',
-  },
-  {
-    id: 2,
-    image: '/img/skils-images/2.svg',
-    title: 'scss',
-  },
-  {
-    id: 3,
-    image: '/img/skils-images/3.svg',
-    title: 'git',
-  },
-  {
-    id: 4,
-    image: '/img/skils-images/4.svg',
-    title: 'webpack',
-  },
-  {
-    id: 5,
-    image: '/img/skils-images/5.svg',
-    title: 'javascript',
-  },
-  {
-    id: 6,
-    image: '/img/skils-images/6.svg',
-    title: 'typescript',
-  },
-  {
-    id: 7,
-    image: '/img/skils-images/7.svg',
-    title: 'vue',
-  },
+import { skillsDefineStore } from '../../stores/skills'
 
-  {
-    id: 8,
-    image: '/img/skils-images/8.svg',
-    title: 'html',
-  },
-  {
-    id: 9,
-    image: '/img/skils-images/9.svg',
-    title: 'pinia ',
-  },
-  {
-    id: 10,
-    image: '/img/skils-images/10.svg',
-    title: 'node',
-  },
-  {
-    id: 11,
-    image: '/img/skils-images/11.svg',
-    title: 'express',
-  },
-  {
-    id: 12,
-    image: '/img/skils-images/12.svg',
-    title: 'mongodb',
-  },
-  {
-    id: 13,
-    image: '/img/skils-images/13.svg',
-    title: 'jest',
-  },
-  {
-    id: 14,
-    image: '/img/skils-images/14.svg',
-    title: 'nuxt',
-  },
-])
+const skilsStore = skillsDefineStore()
 </script>

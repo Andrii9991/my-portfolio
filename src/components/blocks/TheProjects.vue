@@ -1,6 +1,6 @@
 <template>
   <section
-    class="mb-12 flex w-full justify-center from-[#8F98A4] to-[#DBEBFF] md:bg-gradient-to-tr md:pb-[200px] lg:mt-[-120px] xl:rounded-t-[160px]"
+    class="mb-12 flex w-full justify-center from-[#8F98A4] to-[#DBEBFF] md:bg-gradient-to-tr md:pb-[210px] lg:mt-[-120px] xl:rounded-t-[160px]"
     id="projects"
   >
     <!-- Wrapper -->
@@ -46,12 +46,12 @@
           </div>
         </div>
         <!-- Link for site block -->
-        <div class="my-3 flex w-full justify-center">
+        <div class="my-3 flex w-full justify-evenly">
           <a href="goole.com">
             <span
               class="text-[10px] font-medium leading-[28px] xs:text-xs xl:text-[16px]"
-              >Live Demo</span
-            >
+              >Live
+            </span>
             <img
               class="duration-200 hover:scale-105 xl:h-8 xl:w-8"
               src="../../public/img/projects-image/link-image/livedemo.svg"

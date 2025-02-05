@@ -1,7 +1,7 @@
 <template>
   <footer
     data-aos="fade-up"
-    class="flex h-[300px] flex-col items-center rounded-t-[30px] bg-lightGrey px-8 py-3 xs:px-10 xs:py-4 md:rounded-t-[50px] md:px-16 lg:mt-[-145px] xl:rounded-t-[160px]"
+    class="flex h-[300px] flex-col items-center rounded-t-[30px] bg-lightGrey px-8 py-3 xs:px-10 xs:py-4 md:rounded-t-[50px] md:px-16 lg:mt-[-200px] xl:rounded-t-[160px]"
     id="contacts"
   >
     <h1
@@ -16,14 +16,11 @@
         class="flex w-full flex-col justify-center space-y-5 xs:space-y-7 lg:flex-row lg:gap-x-9 lg:space-y-0"
       >
         <!-- Location -->
-        <a
-          href="https://tailwindcss.com/docs/font-weight"
-          class="flex items-center space-x-2"
-        >
+        <a href="#" class="flex items-center space-x-2">
           <img
             src="../../public/img/contacts-images/location.svg"
             alt="some photo"
-            class="h-9 w-9 translate-y-1 xs:h-12 xs:w-12 md:h-14 md:w-14"
+            class="h-9 w-9 translate-y-1 duration-200 hover:scale-110 xs:h-12 xs:w-12 md:h-14 md:w-14"
           />
 
           <div class="flex flex-col">
@@ -44,7 +41,7 @@
           <img
             src="../../public/img/contacts-images/mail.svg"
             alt="some photo"
-            class="h-9 w-9 translate-y-1 xs:h-12 xs:w-12 md:h-14 md:w-14"
+            class="h-9 w-9 translate-y-1 duration-200 hover:scale-110 xs:h-12 xs:w-12 md:h-14 md:w-14"
           />
 
           <div class="flex flex-col">
@@ -65,7 +62,7 @@
           <img
             src="../../public/img/contacts-images/phone.svg"
             alt="some photo"
-            class="h-9 w-9 translate-y-1 xs:h-12 xs:w-12 md:h-14 md:w-14"
+            class="h-9 w-9 translate-y-1 duration-200 hover:scale-110 xs:h-12 xs:w-12 md:h-14 md:w-14"
           />
 
           <div class="flex flex-col">
@@ -87,21 +84,21 @@
         <div class="flex">
           <a href="https://github.com/Andrii9991">
             <img
-              class="mr-3 max-h-7 max-w-7 xs:max-h-8 xs:max-w-8 md:max-h-10 md:max-w-10"
+              class="mr-3 max-h-7 max-w-7 duration-200 hover:scale-110 xs:max-h-8 xs:max-w-8 md:max-h-10 md:max-w-10"
               src="../../public/img/social-images/github.svg"
               alt="Github"
             />
           </a>
           <a href="http://www.linkedin.com/in/andrii-myshchyshyn-36a64b228">
             <img
-              class="max-h-7 max-w-7 xs:max-h-8 xs:max-w-8 md:max-h-10 md:max-w-10"
+              class="max-h-7 max-w-7 duration-200 hover:scale-110 xs:max-h-8 xs:max-w-8 md:max-h-10 md:max-w-10"
               src="../../public/img/social-images/linkedin.svg"
               alt="Github"
           /></a>
         </div>
         <a href="#home">
           <img
-            class="h-7 w-[69px] xs:h-[34px] xs:w-[83px] md:h-[50px] md:w-[116px]"
+            class="h-7 w-[69px] duration-200 hover:scale-110 xs:h-[34px] xs:w-[83px] md:h-[50px] md:w-[116px]"
             src="../../public/img/logo.svg"
             alt="General logo"
           />
