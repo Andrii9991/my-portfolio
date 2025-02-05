@@ -13,7 +13,7 @@
           <div>
             <img
               class="w-full max-w-[300px] md:max-h-[573px] md:max-w-full"
-              src="../../public/img/basic-images/avatar.svg"
+              src="../../public/img/basic-images/back-avatar.svg"
               alt="avatar image"
             />
           </div>
@@ -38,9 +38,6 @@
         </h3>
 
         <p
-          data-aos="flip-left"
-          data-aos-easing="ease-out-cubic"
-          data-aos-duration="1000"
           class="text-inter mb-5 max-w-[80%] text-left text-[12px] font-light leading-5 md:leading-6 lg:text-[14px] lg:leading-10"
         >
           Skilled Front-End Developer from Ternopil, Ukraine, with a focus on

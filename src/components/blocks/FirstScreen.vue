@@ -19,11 +19,11 @@
         </h2>
 
         <h4
-          class="text-custom mt-3 max-w-[632px] px-2 text-center text-xs leading-5 xs:max-w-[80%] sm:mt-4 md:mt-6 md:text-[16px] lg:mb-14 lg:w-auto lg:text-base lg:leading-6"
+          class="text-custom mt-3 max-w-[632px] px-2 text-center text-xs leading-5 xs:max-w-[80%] sm:mt-4 md:mt-6 md:text-[16px] lg:mb-14 lg:w-full lg:max-w-[610px] lg:text-base lg:leading-6"
         >
           Diligent Frontend Developer with expertise in JavaScript and
-          TypeScript, specializing in Vue2/Vue3 and employing Pinia/VueX for
-          efficient state management.
+          TypeScript, specializing <br class="hidden lg:block" />
+          in Vue2/Vue3 and employing Pinia/VueX for efficient state management.
         </h4>
         <div
           class="my-4 flex flex-wrap justify-center gap-1 px-3 xs:max-w-[80%] xs:gap-x-2 xs:px-3 sm:my-5 sm:gap-4 sm:px-5 md:mb-[64px] md:mt-[77px] md:max-w-[740px] md:gap-x-8 lg:mt-0"
