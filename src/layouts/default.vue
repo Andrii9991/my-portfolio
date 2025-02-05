@@ -9,3 +9,5 @@
     <PFooter />
   </div>
 </template>
+
+<script setup></script>

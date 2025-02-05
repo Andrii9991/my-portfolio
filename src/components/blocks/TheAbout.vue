@@ -55,19 +55,19 @@
         >
           <a href="https://github.com/Andrii9991">
             <img
-              class="max-h-[40px] max-w-[40px] md:h-[55px] md:w-[55px]"
+              class="max-h-[40px] max-w-[40px] duration-200 hover:scale-110 md:h-[55px] md:w-[55px]"
               src="../../public/img/social-images/github.svg"
               alt="Github"
             />
           </a>
           <a href="http://www.linkedin.com/in/andrii-myshchyshyn-36a64b228">
             <img
-              class="max-h-[40px] max-w-[40px] md:h-[55px] md:w-[55px]"
+              class="max-h-[40px] max-w-[40px] duration-200 hover:scale-110 md:h-[55px] md:w-[55px]"
               src="../../public/img/social-images/linkedin.svg"
               alt="Github"
           /></a>
 
-          <PButton class="ml-[150px] xs:ml-2" text="PORTFOLIO" />
+          <!-- <PButton class="ml-[150px] xs:ml-2" text="PORTFOLIO" /> -->
         </div>
       </div>
     </div>
