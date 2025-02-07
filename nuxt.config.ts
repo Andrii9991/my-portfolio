@@ -1,12 +1,10 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: "2024-11-01",
-  modules: [
-    "@nuxtjs/tailwindcss",
-    "@pinia/nuxt",
-    "nuxt-aos",
-    "@nuxt/image",
-  ],
+  modules: ["@nuxtjs/tailwindcss", "@pinia/nuxt", "nuxt-aos", "@nuxt/image"],
+  nitro: {
+    preset: "static", // Генерує статичний сайт
+  },
   build: {
     transpile: ["vue"], // Налаштування для підтримки Vue 3
   },
