@@ -6,9 +6,11 @@
       'translate-x-0': modelValue,
     }"
   >
-    <span @click="closeMenu" class="absolute right-2 top-2 cursor-pointer"
-      >X</span
-    >
+    <img
+      src="/img/basic-images/close.svg"
+      @click="closeMenu"
+      class="absolute right-2 top-2 h-8 w-8 cursor-pointer"
+    />
     <ul class="mt-10 space-y-6 text-center text-xl">
       <li v-for="item in navItems" :key="item.id" class="hover:text-gray-400">
         <nuxt-link :to="item.href" @click="closeMenu">

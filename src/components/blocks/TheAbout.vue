@@ -5,15 +5,15 @@
   >
     <!-- Wrapper -->
     <div
-      class="w-full-content flex max-w-7xl flex-col md:my-8 md:flex-row lg:my-[100px] lg:justify-around"
+      class="w-full-content relative flex max-w-7xl flex-col items-center md:my-8 md:flex-row lg:my-[100px]"
     >
       <!-- Image Block -->
       <div class="flex w-full justify-center">
         <div class="">
           <div>
             <img
-              class="w-full max-w-[300px] md:max-h-[573px] md:max-w-full"
-              src="../../public/img/basic-images/back-avatar.svg"
+              class="w-full max-w-[300px] md:max-h-[573px] md:max-w-full xl:min-h-[673px] xl:min-w-[542px]"
+              src="/img/basic-images/back-avatar.svg"
               alt="avatar image"
             />
           </div>
@@ -22,7 +22,7 @@
 
       <!-- Content Block -->
       <div
-        class="m-4 flex w-full flex-col items-center text-center xs:ml-4 md:ml-2 md:max-w-[50%] md:p-4 lg:ml-20"
+        class="m-4 flex w-full flex-col items-center text-center xs:ml-4 md:ml-2 md:max-w-[50%] lg:max-w-full lg:p-4 xl:min-h-[673px] xl:min-w-[542px]"
       >
         <h1
           class="gradient-text text-center font-russoOne text-[20px] md:mb-2 md:text-3xl lg:mb-5 lg:text-5xl"
@@ -34,11 +34,12 @@
         <h3
           class="text-inter justify-center text-center text-base font-semibold leading-10 md:mb-[28px] md:w-[100%] md:text-[30px] lg:mb-[46px] lg:w-[80%] lg:text-[40px]"
         >
-          Front-End Developer Vue.js Specialist
+          Front-End Developer <br class="hidden lg:block" />
+          Vue.js Specialist
         </h3>
 
         <p
-          class="text-inter mb-5 max-w-[80%] text-left text-[12px] font-light leading-5 md:leading-6 lg:text-[14px] lg:leading-10"
+          class="text-inter lg:font mb-5 max-w-[80%] text-justify text-[12px] font-light leading-5 md:leading-6 lg:text-[18px] lg:leading-10"
         >
           Skilled Front-End Developer from Ternopil, Ukraine, with a focus on
           JavaScript and TypeScript. Specializing in Vue2/Vue3 frameworks,
@@ -50,24 +51,27 @@
         </p>
 
         <div
-          data-aos="fade-right"
-          class="flex w-[100%] justify-center gap-3 md:mt-16 lg:mt-1"
+          class="lg:mt-15 flex w-full max-w-[80%] items-center gap-3 md:mt-[78px] lg:justify-between"
         >
-          <a href="https://github.com/Andrii9991">
-            <img
-              class="max-h-[40px] max-w-[40px] duration-200 hover:scale-110 md:h-[55px] md:w-[55px]"
-              src="../../public/img/social-images/github.svg"
-              alt="Github"
-            />
-          </a>
-          <a href="http://www.linkedin.com/in/andrii-myshchyshyn-36a64b228">
-            <img
-              class="max-h-[40px] max-w-[40px] duration-200 hover:scale-110 md:h-[55px] md:w-[55px]"
-              src="../../public/img/social-images/linkedin.svg"
-              alt="Github"
-          /></a>
+          <div class="flex gap-3">
+            <a href="https://github.com/Andrii9991">
+              <NuxtImg
+                class="max-h-[40px] max-w-[40px] duration-200 hover:scale-110 md:w-[62px] md:max-w-full lg:h-[62px] lg:max-h-full"
+                src="/img/social-images/github.svg"
+                alt="Github"
+                loading="lazy"
+              />
+            </a>
+            <a href="http://www.linkedin.com/in/andrii-myshchyshyn-36a64b228">
+              <NuxtImg
+                class="max-h-[40px] max-w-[40px] duration-200 hover:scale-110 md:w-[62px] md:max-w-full lg:h-[62px] lg:max-h-full"
+                src="/img/social-images/linkedin.svg"
+                alt="Github"
+                loading="lazy"
+            /></a>
+          </div>
 
-          <!-- <PButton class="ml-[150px] xs:ml-2" text="PORTFOLIO" /> -->
+          <PButton class="xs:ml-2" text="CONTACT ME" />
         </div>
       </div>
     </div>

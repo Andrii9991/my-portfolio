@@ -1,10 +1,11 @@
 <template>
   <div>
-    <button
-      class="button-custom rounded-[30px] px-2 py-3 font-russoOne text-[12px] text-white md:px-[48px] md:py-[16px] lg:rounded-[50px]"
+    <a
+      href="https://t.me/Andrii_991"
+      class="button-custom h-full rounded-[30px] px-2 py-3 font-russoOne text-[12px] text-white lg:rounded-[50px] lg:px-8 lg:py-6"
     >
       {{ text }}
-    </button>
+    </a>
   </div>
 </template>
 
