@@ -8,7 +8,7 @@
       <!-- Content block -->
       <div class="flex flex-col items-center px-5">
         <h1
-          class="gradient-text my-3 animate-bounce bg-custom-gradient text-center font-russoOne text-xl sm:mb-4 sm:mt-10 sm:px-2 sm:text-5xl md:mb-[50px] md:mt-20 md:text-8xl md:leading-[96px] lg:mb-5 lg:text-[80px]"
+          class="gradient-text my-3 bg-custom-gradient text-center font-russoOne text-xl sm:mb-4 sm:mt-10 sm:px-2 sm:text-5xl md:mb-[50px] md:mt-20 md:text-8xl md:leading-[96px] lg:mb-5 lg:text-[80px]"
         >
           Front-End Developer
         </h1>
@@ -38,6 +38,7 @@
               class="h-[35px] w-[35px] xs:h-[40px] xs:w-[40px] md:h-[60px] md:w-[60px]"
               :src="item.image"
               :alt="item.title"
+              loading="lazy"
             />
           </a>
         </div>
@@ -47,7 +48,7 @@
       <div class="hidden items-end lg:flex">
         <img
           class="w-full lg:min-w-[500px]"
-          src="../../public/img/basic-images/first-screen-photo.svg"
+          src="/img/basic-images/first-screen-photo.svg"
           alt="avatar-image"
         />
       </div>
