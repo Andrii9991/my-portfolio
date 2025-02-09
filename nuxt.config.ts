@@ -6,6 +6,7 @@ export default defineNuxtConfig({
   nitro: {
     preset: "static",
   },
+
   build: {
     transpile: ["vue"],
   },
