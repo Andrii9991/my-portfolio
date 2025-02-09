@@ -55,7 +55,7 @@
         >
           <div class="flex gap-3">
             <a href="https://github.com/Andrii9991">
-              <NuxtImg
+              <img
                 class="max-h-[40px] max-w-[40px] duration-200 hover:scale-110 md:w-[62px] md:max-w-full lg:h-[62px] lg:max-h-full"
                 src="/img/social-images/github.svg"
                 alt="Github"
@@ -63,7 +63,7 @@
               />
             </a>
             <a href="http://www.linkedin.com/in/andrii-myshchyshyn-36a64b228">
-              <NuxtImg
+              <img
                 class="max-h-[40px] max-w-[40px] duration-200 hover:scale-110 md:w-[62px] md:max-w-full lg:h-[62px] lg:max-h-full"
                 src="/img/social-images/linkedin.svg"
                 alt="Github"
