@@ -4,10 +4,10 @@ export default defineNuxtConfig({
   modules: ["@nuxtjs/tailwindcss", "@pinia/nuxt", "nuxt-aos", "@nuxt/image"],
   ssr: false,
   nitro: {
-    preset: "static", // Генерує статичний сайт
+    preset: "static",
   },
   build: {
-    transpile: ["vue"], // Налаштування для підтримки Vue 3
+    transpile: ["vue"],
   },
   devtools: { enabled: true },
   srcDir: "src/.",
